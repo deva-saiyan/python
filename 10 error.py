@@ -2,11 +2,9 @@ a = 1
 b = 5
 
 try:
-    if a == 10:
-        print(b)
-
-except Exception as e:
-    print(f'Error: {e}')
+    print(s)
+except :
+    print(f'Error')
 
 else:
     print('Code OK')

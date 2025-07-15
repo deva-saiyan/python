@@ -35,9 +35,9 @@ print()
 
 
 # Working with a number list
-num = [1, 2, 3, 3, 2, 4332, 344, 4, 5, 23, 6, 7, 8, 9, 10]
+num = [1, 2, 3, 3, 2,3, 4332, 344, 4, 5, 23, 6, 7, 8, 9, 10]
 
-num.sort()                                   # Sort the list in ascending order
+'''num.sort()                                   # Sort the list in ascending order
 print("Sorted Numbers:", num)
 print()
 
@@ -49,4 +49,26 @@ print("Unique Numbers (Set):", s)
 print("Max:", max(num))
 print("Min:", min(num))
 print("Sum:", sum(num))
-print("Length:", len(num))
+print("Length:", len(num))'''
+
+a=[]
+b=[]
+c=[]
+d=[]
+for i in num:
+    if i not in a:
+        a.append(i)
+
+        
+    else:
+        b.append(i)
+print('a =',a ,'\n b =',b,'\n c =',c)
+
+for i in b:
+    if num.count(i) > 1:
+        c.append(i)
+   
+    if i not in c:
+        d.append(i)
+
+print('a =',a ,'\n b =',b,'\n c =',c,'d=',d)

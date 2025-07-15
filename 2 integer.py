@@ -8,3 +8,5 @@ word = '1924'
 
 b = int(word)
 print(b)                # Output: 1924
+
+
